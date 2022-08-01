@@ -1,6 +1,5 @@
 #include <iostream>
 #include "director.h"
-#include <limits>
 
 void Director::getCommand() {
     std::cout << "Enter command (number): ";
