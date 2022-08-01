@@ -3,15 +3,18 @@
 #include "person.h"
 
 enum Objective {
-    One,
-    Two,
-    Three,
+    A,
+    B,
+    C,
     None
 };
 
 class Employee: public Person {
     Objective objective = None;
 public:
+    Employee();
+    Employee(std::string position);
     void setObjective(Objective newObjective);
-    std::string getObjective();
+    Objective getObjective();
+    std::string getStrObjective();
 };

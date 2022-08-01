@@ -1,10 +1,22 @@
 #include <iostream>
 #include "employee.h"
 
-std::string Employee::getObjective() {
-    if (objective == One) return "One";
-    else if (objective == Two) return "Two";
-    else if (objective == Three) return "Three";
+Employee::Employee():Person() {
+
+}
+
+Employee::Employee(std::string position):Person(position) {
+
+}
+
+Objective Employee::getObjective() {
+    return objective;
+}
+
+std::string Employee::getStrObjective() {
+    if (objective == A) return "Task A";
+    else if (objective == B) return "Task B";
+    else if (objective == C) return "Task C";
     else return "None";
 }
 

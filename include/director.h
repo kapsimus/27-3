@@ -8,8 +8,10 @@ class Director: public Person {
     std::vector<Manager*> managersList;
 public:
     Director();
+    Director(std::string position);
     ~Director();
-    void getCommand(int newCommand);
-    int sendCommand();
+    void getCommand();
+    void sendCommand();
+    int getFreeEmployees();
 
 };
